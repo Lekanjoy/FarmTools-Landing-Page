@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryColor: "#008D2D",
+        secondaryColor: "#343434",
+      },
+      backgroundImage: {
+        heroImage: "url('./src/assets/Main frame.svg')",
+      },
+    },
   },
   plugins: [],
 };
