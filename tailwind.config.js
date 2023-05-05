@@ -10,6 +10,9 @@ export default {
       backgroundImage: {
         heroImage: "url('./src/assets/Main frame.svg')",
       },
+      gridTemplateColumns: {
+        fourBox: "repeat(4, minmax(260px, 1fr))",
+      },
     },
   },
   plugins: [],

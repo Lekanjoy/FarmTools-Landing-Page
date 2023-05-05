@@ -1,10 +1,12 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 import hamburger from "../assets/hamburger.svg";
 
 const Header = () => {
-const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
+  const sidebarRef = useRef(null);
 
+  // Header Scroll
   useEffect(() => {
     let scrollNav = document.getElementById("header");
     window.addEventListener("scroll", () => {
@@ -18,6 +20,20 @@ const [showNav, setShowNav] = useState(false)
     });
   }, []);
 
+  // Close Mobile Nav when clicked outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setShowNav(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [sidebarRef]);
+
   return (
     <header
       id="header"
@@ -29,6 +45,7 @@ const [showNav, setShowNav] = useState(false)
         alt="Farm Tools Logo Image"
       />
       <img
+        id="hamburger"
         className="w-[30px] cursor-pointer md:hidden"
         src={hamburger}
         alt="Hamburger Menu"
@@ -48,7 +65,10 @@ const [showNav, setShowNav] = useState(false)
 
       {/* Mobile Navigations */}
       {showNav && (
-        <div className="absolute top-[49px] text-center py-6 px-4 h-screen bg-white left-0 md:hidden">
+        <div
+          id="sidebar"
+          className="absolute top-[49px] text-center py-6 px-4 h-screen bg-white left-0 md:hidden"
+        >
           <ul className="flex flex-col gap-y-6">
             <li className="text-secondaryColor font-medium">Home</li>
             <li className="text-secondaryColor font-medium">Shop</li>
