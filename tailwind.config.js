@@ -8,7 +8,7 @@ export default {
         secondaryColor: "#343434",
       },
       backgroundImage: {
-        heroImage: "url('./src/assets/Main frame.svg')",
+        heroImage: "url('./src/assets/heroImg.svg')",
       },
       gridTemplateColumns: {
         fourBox: "repeat(4, minmax(260px, 1fr))",
