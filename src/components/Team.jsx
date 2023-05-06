@@ -15,10 +15,10 @@ const Team = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-y-3 md:flex-row md:justify-center md:gap-x-6 flex-wrap">
-        <img src={person1} alt="" />
-        <img src={person2} alt="" />
-        <img src={person3} alt="" />
+      <div className="flex flex-col gap-y-3 w-full md:flex-row md:justify-center md:flex-wrap md:gap-x-6 ">
+        <img src={person1} alt="A Team member of FarmT" />
+        <img src={person2} alt="A Team member of FarmT" />
+        <img src={person3} alt="A Team member of FarmT" />
       </div>
     </section>
   );

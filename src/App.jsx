@@ -4,6 +4,8 @@ import OurServices from "./components/OurServices"
 import FeaturedSales from "./components/FeaturedSales"
 import AboutUs from "./components/AboutUs"
 import Team from "./components/Team"
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
         <FeaturedSales />
         <AboutUs/>
         <Team/>
+        <Testimonials/>
+        <Footer/>
       </main>
     </div>
   );
