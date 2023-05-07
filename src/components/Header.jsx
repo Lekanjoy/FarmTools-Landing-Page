@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import hamburger from "../assets/hamburger.svg";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
-  const sidebarRef = useRef(null);
 
   // Header Scroll
   useEffect(() => {
@@ -22,8 +21,8 @@ const Header = () => {
 
   // Close Mobile Nav when clicked outside
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+    function handleClickOutside(e) {
+      if (e.target.id !=='sidebar' && e.target.id !=='hamburger') {
         setShowNav(false);
       }
     }
@@ -32,7 +31,7 @@ const Header = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [sidebarRef]);
+  }, []);
 
   return (
     <header
@@ -67,7 +66,7 @@ const Header = () => {
       {showNav && (
         <div
           id="sidebar"
-          className="absolute top-[49px] text-center py-6 px-4 h-screen bg-white left-0 md:hidden"
+          className="absolute shadow-md top-[49px] text-center py-6 px-4 h-screen bg-white left-0 md:hidden"
         >
           <ul className="flex flex-col gap-y-6">
             <li className="text-secondaryColor font-medium">Home</li>

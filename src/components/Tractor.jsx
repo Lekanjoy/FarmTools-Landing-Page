@@ -8,7 +8,7 @@ const Tractor = ({productImg}) => {
         src={productImg}
         alt="A Farm Tractor"
       />
-      <div className="p-4 text-secondaryColor text-lg font-medium md:font-semibold md:text-lg lg:text-xl">
+      <div className="p-4 text-secondaryColor font-medium md:font-semibold md:text-lg lg:text-xl">
         <h4>Tractor</h4>
         <p className="text-[rgba(52,_52,_52,_0.6)]">20-50HP Farm Tractor</p>
         <p className="text-primaryColor mb-1">#7,500,000</p>
