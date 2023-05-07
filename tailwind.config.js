@@ -9,6 +9,8 @@ export default {
       },
       backgroundImage: {
         heroImage: "url('./assets/heroImg.svg')",
+        blogImage: "url('./assets/blogImg.svg')",
+        communityImage: "url('./assets/comImg.jpg')",
       },
       gridTemplateColumns: {
         fourBox: "repeat(4, minmax(260px, 1fr))",

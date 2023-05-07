@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base{
-.hero::before {
+  *{
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.hero::before, .blog::before {
     content: "";
     display: block;
     position: absolute;
@@ -32,6 +36,14 @@
     to {
       transform: translateY(0);
     }
+  }
+}
+@layer components{
+  .listTitle{
+    @apply text-[#fafafa] font-semibold text-lg md:text-lg lg:text-xl
+  }
+  .listLink{
+    @apply text-[#C2C2C2] hover:scale-105 cursor-pointer duration-100
   }
 }
 

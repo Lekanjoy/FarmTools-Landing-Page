@@ -30,9 +30,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="relative bg-secondaryColor w-full text-center h-[400px] flex justify-center items-center flex-col px-4 lg:px-20">
-      <img src={quotes} className="mb-4 w-20  md:mb-8" />
-      <h5 className="text-lg mb-3 text-white md:max-w-md md:text-2xl md:mb-5 md:font-medium lg:max-w-4xl">
+    <div className="relative bg-secondaryColor w-full text-center flex justify-center items-center flex-col px-4 py-8 lg:px-20">
+      <img src={quotes} className="mb-4 w-10 md:w-20 md:mb-8" />
+      <h5 className="text-lg mb-3 text-white md:max-w-[500px] md:text-xl md:mb-5 md:font-medium lg:text-2xl lg:max-w-4xl">
         {testimonials[currentIndex].text}
       </h5>
       <div className="mb-6 md:text-xl md:mb-8">
@@ -43,8 +43,9 @@ const Testimonials = () => {
         {testimonials.map((test, index) => {
           return (
             <div
+            onClick={() => setCurrentIndex(index)}
               key={index}
-              className={`w-[30px] h-[10px] rounded-[41px] ${
+              className={`w-[30px] h-[10px] rounded-[41px] cursor-pointer ${
                 currentIndex === index ? "bg-primaryColor" : " bg-[#B7B7B7]"
               }`}
             ></div>

@@ -8,10 +8,10 @@ const OurServices = () => {
         <h2 className="font-semibold text-primaryColor text-2xl mb-2 md:font-bold md:mb-4 md:text-3xl lg:mb-9 lg:text-5xl">
           Our Services
         </h2>
-        <p className="font-semibold text-xl mb-2 md:mb-4 md:text-2xl lg:mb-9">
+        <p className="font-semibold text-xl mb-2 md:mb-4 md:text-xl lg:text-2xl lg:mb-9">
           Sales Of Different Farming Equipment With Up To 12 Months Warranty
         </p>
-        <p className="mb-4 md:mb-4 md:text-2xl lg:mb-9">
+        <p className="mb-4 md:mb-4 md:text-xl lg:text-2xl lg:mb-9">
           We bring to the a way to purchase different farm equipment from a
           legit plug and at an affordable price.
         </p>
@@ -19,7 +19,7 @@ const OurServices = () => {
           Read More
         </button>
       </div>
-      <div className="w-full md:min-w-[400px] lg:min-w-[600px]">
+      <div className="w-full md:min-w-[350px] lg:min-w-[600px]">
         <img className="min-w-full" src={serviceImg} alt="" />
       </div>
     </section>

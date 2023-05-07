@@ -5,6 +5,8 @@ import FeaturedSales from "./components/FeaturedSales"
 import AboutUs from "./components/AboutUs"
 import Team from "./components/Team"
 import Testimonials from "./components/Testimonials";
+import Blog from "./components/Blog"
+import Community from "./components/Community"
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <AboutUs/>
         <Team/>
         <Testimonials/>
+        <Blog/>
+        <Community/>
         <Footer/>
       </main>
     </div>

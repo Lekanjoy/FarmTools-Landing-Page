@@ -6,7 +6,7 @@ export default [
   },
 
   {
-    text: "I have taken FarmT is my go to place whenever I need to get any farm tools , they have been a reliable company always attentive to customer needs. Therefore they decide the hype...",
+    text: "I have taken FarmT as my go to place whenever I need to get any farm tools , they have been a reliable company always attentive to customer needs. Therefore they decide the hype...",
     name: "Jude Bellingham",
     location: "Large scale farmer in Ondo State",
   },

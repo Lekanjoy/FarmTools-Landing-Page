@@ -53,13 +53,13 @@ const Header = () => {
       />
 
       <ul className="hidden flex-col md:flex md:flex-row md:gap-x-5">
-        <li className="text-secondaryColor font-medium md:text-lg">Home</li>
-        <li className="text-secondaryColor font-medium md:text-lg">Shop</li>
-        <li className="text-secondaryColor font-medium md:text-lg">About</li>
-        <li className="text-secondaryColor font-medium md:text-lg">Contact</li>
-        <li className="text-secondaryColor font-medium md:text-lg">Blog</li>
+        <li className="text-secondaryColor font-medium lg:text-lg">Home</li>
+        <li className="text-secondaryColor font-medium lg:text-lg">Shop</li>
+        <li className="text-secondaryColor font-medium lg:text-lg">About</li>
+        <li className="text-secondaryColor font-medium lg:text-lg">Contact</li>
+        <li className="text-secondaryColor font-medium lg:text-lg">Blog</li>
       </ul>
-      <button className="hidden bg-primaryColor rounded-3xl py-3 px-6 text-white font-bold w-[175px] hover:opacity-80 md:block">
+      <button className="hidden bg-primaryColor rounded-3xl text-white font-bold w-[175px] hover:opacity-80 md:block md:py-2 md:px-4  lg:py-3 lg:px-6">
         Join Us
       </button>
 

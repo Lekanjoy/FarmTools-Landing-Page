@@ -32,7 +32,7 @@ const FeaturedSales = () => {
         <Tractor productImg={Tractor8} />
       </div>
       <div className="flex items-center justify-center w-full">
-        <button className="w-3/4 p-3 rounded-3xl bg-primaryColor text-center text-white font-semibold  md:font-bold md:text-lg md:w-[467px] md:h-[56px] hover:opacity-90">
+        <button className="w-3/4 p-2 rounded-3xl bg-primaryColor text-center text-white font-semibold md:font-bold md:text-lg md:w-[467px]  md:h-[46px] lg:h-[56px] lg:p-3 hover:opacity-90">
           Shop
         </button>
       </div>
